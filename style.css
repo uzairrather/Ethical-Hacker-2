@@ -1,0 +1,246 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(6, 5, 5, 0.75), rgba(6, 5, 5, 0.75)), url('nasa-yZygONrUBe8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+
+.logo {
+    margin-right: 430px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    font-size: .85rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Tahoma,Verdana, sans-serif;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10PX;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+     'Lucida Sans Unicode',  Verdana, sans-serif;
+    
+
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+
+button {
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: .8rem;
+}
+
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
+
+@media  (max-width: 870px) {
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .navbar ul li a {
+        font-size: .55rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .logo {
+        margin-right: 130px;
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+    }
+    .content h1 {
+        font-size: 30px;
+        margin-top: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+         'Lucida Sans Unicode',  Verdana, sans-serif;
+        
+    
+    }
+    
+    .content p {
+        margin: 10px auto;
+        font-weight: 50;
+        line-height: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    }
+   
+    button {
+        width: 100px;
+        padding: 10px 0;
+        text-align: center;
+        margin: 10px 5px;
+        border-radius: 25px;
+        font-weight: small;
+        border: 2px solid #009688;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        font-size: .6rem;
+    }
+}
+
+@media (max-width:450px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    
+    .navbar ul li a {
+        font-size: .50rem;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        
+    }
+    .logo {
+        margin-right: 140px;
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+    }
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 ;
+        position: relative;
+    }
+
+    .navbar {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+     
+    .content h1 {
+        font-size: 30px;
+        margin-top: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+         'Lucida Sans Unicode',  Verdana, sans-serif;
+        
+    
+    }
+    
+    .content p {
+        margin: 10px auto;
+        font-size: .5rem;
+        font-weight: 50;
+        line-height: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    }
+   
+    button {
+        width: 100px;
+        padding: 10px 0;
+        margin: 10px 5px;
+        border-radius: 25px;
+        font-weight: small;
+        overflow: hidden;
+        font-size: .6rem;
+    }
+}
+
+   
+    
+    
